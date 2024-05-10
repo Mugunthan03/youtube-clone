@@ -63,7 +63,7 @@ const Watch = () => {
     }, [videoId]);
 
     return (
-        <div className='mt-16 w-[92%] xl:w-[95%]  h-screen md:h-full lg:h-screen flex flex-wrap mx-0 md:mx-10 '>
+        <div className='mt-16 w-[92%] xl:w-[95%]  h-screen md:h-full lg:h-screen flex flex-wrap mx-0 md:mx-10  '>
             
             <div className='w-full lg:w-[60%] m-5 mx-5 h-[70%] '>
                 <iframe src={`https://www.youtube.com/embed/${videoId}?&rel=0&autoplay=1`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -103,7 +103,8 @@ const Watch = () => {
                 </div>
             </div>
 
-            <div className='w-full lg:w-[28%] h-96 lg:h-2/3  mx-5  mt-0 lg:mt-5 border-gray-300 border-2  flex flex-col justify-between rounded-md'>
+            <div className='w-full lg:w-[28%] h-96 lg:h-2/3  ml-5    mt-0 lg:mt-5 border-gray-300 border-2 
+             flex flex-col justify-between rounded-md'>
 
                 <div className='flex justify-between items-center p-2 border-b-2 border-gray-300 border  '>
                     <h1 className='text-xl'>Top Chat</h1>
@@ -124,6 +125,10 @@ const Watch = () => {
                 
                 
                 </div>  
+                <div>
+                    <h1 className='pb-3 lg:hidden'>.</h1>
+                </div>
+                
         </div>
     );
 };
